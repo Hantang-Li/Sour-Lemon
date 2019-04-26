@@ -1,5 +1,5 @@
 /**---Load the movie information based on TMDB API---**/
-const api = ""
+
 const movie_id = $("#mid").html()
 
 // All the API calls
@@ -65,7 +65,7 @@ function createCast(r) {
 }
 
 // load trailer
-const settings_trailer = new Setting("/videos?language=en-US&api_key="+api)
+const settings_trailer = new Setting("/videos?language=en-US&api_key=042cb5f6e3db002d154f68dd7c3f4e90")
 $.ajax(settings_trailer).done(function(response) {
   let link = "https://www.youtube.com/embed/";
   for (let i = 0; i < response.results.length; i++) {
@@ -78,7 +78,7 @@ $.ajax(settings_trailer).done(function(response) {
 });
 
 // load info
-const settings_info = new Setting("?language=en-US&api_key="+api)
+const settings_info = new Setting("?language=en-US&api_key=042cb5f6e3db002d154f68dd7c3f4e90")
 $.ajax(settings_info).done(function(response) {
   $("#main_back").css("background-image", "url(\"http://image.tmdb.org/t/p/w780/" + response.poster_path + "\")")
   $("#poster").attr("src", "http://image.tmdb.org/t/p/w780/" + response.poster_path)
@@ -105,7 +105,7 @@ $.ajax(settings_info).done(function(response) {
 
 
 // load cast
-const settings_cast = new Setting("/credits?api_key="+api)
+const settings_cast = new Setting("/credits?api_key=042cb5f6e3db002d154f68dd7c3f4e90")
 $.ajax(settings_cast).done(function(response) {
   createCast(response)
 });
