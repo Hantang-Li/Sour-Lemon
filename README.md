@@ -1,7 +1,7 @@
 # Soure-Lemon
 A movie review website project (CSC309 Programming on Web course Project not in commercial use)
 
-URL: https://sourlemon47.herokuapp.com/
+[//]: # "URL: https://sourlemon47.herokuapp.com/"
 
 A web app that can read movie information, comment movies, and rate movies. Powered by TMDB (https://www.themoviedb.org/)
 
