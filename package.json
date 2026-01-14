@@ -5,7 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "bcryptjs": "^3.0.2",
-    "express": "^5.1.0",
+    "express": "^5.2.0",
     "express-session": "^1.18.1",
     "hbs": "^4.2.0",
     "mongodb": "^6.17.0",
